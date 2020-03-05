@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  z-index: 100;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFFF;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFF;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.up span {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F7931e;
+  z-index: 10000;
+  font-size: 2.5em;
+}
+.contSection {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+.contSection .contentTitle {
+  width: 100%;
+  height: 25vh;
+}
+.contSection .contentTitle .title {
+  width: 80%;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.contSection .contentTitle hr {
+  background-color: #f7931e;
+  width: 30%;
+  height: 8px;
+  margin: 10px auto;
+  border: none;
+}
+.contSection .contentTitle .paragraph {
+  width: 80%;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+/*Container Services*/
+
+.containerServices .contentServices {
+  width: 100%;
+  background-color: #202020;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+.containerServices .contentServices .contServices {
+  width: 90%;
+  box-sizing: border-box;
+}
+.contentServices .contServices .services {
+  width: 80%;
+  height: 50vh;
+  overflow: hidden;
+  border: 5px solid #f7931e;
+  border-radius: 20px 0px 60px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contServices .services .contIcon {
+  width: 20%;
+  height: 100%;
+}
+.contServices .services .contInfo {
+  width: 80%;
+  height: 100%;
+}
+.contServices .services .contIcon .icon {
+  width: 100%;
+  height: 60%;
+  color: #FFFFFF;
+  font-size: 3em;
+}
+.contServices .services .contIcon .icon span {
+  background-color: #f7931e;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+.contServices .services .contIcon .contTitle {
+  width: 100%;
+  height: 40%;
+  box-sizing: border-box;
+}
+.contServices .services .contIcon .contTitle .title {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 80%;
+}
+/*Container information*/
+
+.contServices .services .contInfo .contParagarph,
+.contServices .services .contInfo .contDropMore {
+  width: 90%;
+  height: 40%;
+  box-sizing: border-box;
+}
+.contServices .services .contInfo .contDropMore {
+  display: none;
+}
+.contServices .services .contInfo .contParagarph .paragraph,
+.contServices .services .contInfo .contDropMore .paragraph {
+  width: 100%;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.contServices .services .contInfo .contBtn {
+  position: relative;
+  width: 90%;
+  height: 20%;
+  box-sizing: border-box;
+}
+.contInfo .contBtn .btnMoreService {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid #f7931e;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  color: #f7931e;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.contInfo .contBtn #btnMoreService:hover {
+  background-color: #f7931e;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+}
+@media screen and ( max-width: 580px) and ( min-width: 280px) {
+  .contSection,
+  .contSection .contentTitle,
+  .containerBrands .contentBrands,
+  .containerBrands .contentBrands .contBrands {
+    width: 100%;
+  }
+  .contSection .contentTitle {
+    height: 60vh;
+  }
+  .contSection .contentTitle .title,
+  .contServices .services .contIcon .contTitle .title {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  .contSection .contentTitle .paragraph,
+  .contServices .services .contInfo .contParagarph .paragraph,
+  .contServices .services .contInfo .contDropMore .paragraph {
+    width: 90%;
+    margin: auto;
+    font-size: 0.8em;
+  }
+  .contentServices .contServices .services {
+    width: 90%;
+    height: 150vh;
+    position: relative;
+    border: 3px solid #f7931e;
+    border-radius: 10px 0px 25px 0px;
+  }
+  .contServices .services .contIcon {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contServices .services .contIcon .icon {
+    width: 100%;
+    height: 40%;
+  }
+  .contServices .services .contIcon .contTitle {
+    width: 100%;
+    height: 40%;
+  }
+  .contServices .services .contInfo {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .contServices .services .contInfo .contParagarph,
+  .contServices .services .contInfo .contDropMore {
+    width: 90%;
+  }
+  .contServices .services .contInfo .contBtn {
+    width: 70%;
+  }
+  .services .contInfo .contBtn .btnMoreService {
+    width: 100%;
+  }
+  .containerBrands .contentBrands .contBrands img{
+    width: 100%;
+
+  }
+}

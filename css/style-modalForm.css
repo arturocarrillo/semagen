@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#containerModal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba(66, 73, 73, 0.6);
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#containerModal .contModal {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+/*Container Form*/
+
+#containerModal .contForm {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+#containerModal .contForm #form {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#containerModal #form .contInfo {
+  width: 100%;
+  box-sizing: border-box;
+}
+#containerModal #form .contInfo .titleForm {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f7931e;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+/*Container Input*/
+
+#containerModal #form .contInfo .contInput {
+  width: 90%;
+  height: 8vh;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#containerModal #form .contInfo .contInput_2 {
+  width: 40%;
+  height: 8vh;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*cont icon*/
+
+#containerModal #form .contInfo .contInput .icon {
+  width: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f7931e;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+#containerModal #form .contInfo .contInput_2 .icon {
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f7931e;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+/*cont input*/
+
+#containerModal #form .contInfo .contInput .input {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#containerModal #form .contInfo .contInput_2 .input {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*style input */
+
+#containerModal #form .contInfo .styleInput_1 {
+  width: 100%;
+  height: 90%;
+  padding: 5px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: 2px solid transparent;
+  color: #f7931e;
+  background-color: #FBFCFC;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+#containerModal #form .contInfo .styleInput_1:hover {
+  border: 2px solid #f7931e;
+  background-color: #FFFFFF;
+}
+/*container textarea*/
+
+#containerModal #form .contInfo .contText {
+  width: 90%;
+  height: 20vh;
+  position: relative;
+  box-sizing: border-box;
+}
+#containerModal #form .contInfo .contText .icon {
+  width: 8%;
+  height: 7vh;
+  background-color: #f7931e;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#containerModal #form .contInfo .contText .text {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 15vh;
+  box-sizing: border-box;
+}
+#containerModal #form .contInfo .contText .text .styleText {
+  width: 95%;
+  height: 90%;
+  padding: 5px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: 2px solid transparent;
+  color: #f7931e;
+  background-color: #FBFCFC;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+#containerModal #form .contInfo .contText .text .styleText:hover {
+  border: 2px solid #f7931e;
+  background-color: #FFFFFF;
+}
+/*Conatainer button submint*/
+
+#containerModal #form .contBtn {
+  position: relative;
+  width: 90%;
+  height: 8vh;
+  margin: auto;
+}
+#containerModal #form .contBtn #send {
+  width: 15%;
+  background-color: #f7931e;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#containerModal #form .contBtn #send:hover {
+  background-color: #FFFFFF;
+  color: #f7931e;
+  border: 2px solid #f7931e;
+}
+/*--------------- button close form modal ----------------*/
+
+#containerModal .btnModalClose {
+  width: 10%;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#containerModal .btnModalClose #closeModal {
+  text-decoration: none;
+  font-size: 2em;
+  color: #C0392B;
+}
+@media screen and (max-width: 580px) and (min-width: 280px) {
+  #containerModal {
+    display: none;
+    width: 100%;
+    height: 400vh;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+  #containerModal .contModal {
+    width: 95%;
+    height: 50%;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    bottom: 0;
+    margin-top: 20px;
+    z-index: 10000;
+  }
+  /*Container Form*/
+  #containerModal .contForm {
+    width: 90%;
+    height: 100%;
+  }
+  #containerModal .contForm #form {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  #containerModal #form .contInfo {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #containerModal #form .contInfo .titleForm {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  /*Container Input*/
+  #containerModal #form .contInfo .contInput,
+  #containerModal #form .contInfo .contInput_2 {
+    width: 90%;
+    height: 15vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /*cont icon*/
+  #containerModal #form .contInfo .contInput .icon,
+  #containerModal #form .contInfo .contInput_2 .icon {
+    width: 15%;
+  }
+  /*cont input*/
+  #containerModal #form .contInfo .contInput .input,
+  #containerModal #form .contInfo .contInput_2 .input {
+    width: 80%;
+    height: 100%;
+  }
+  /*container textarea*/
+  #containerModal #form .contInfo .contText {
+    width: 90%;
+    height: 20vh;
+  }
+  #containerModal #form .contInfo .contText .icon {
+    width: 15%;
+    height: 10%;
+  }
+  #containerModal #form .contInfo .contText .text {
+    width: 90%;
+    height: 15vh;
+  }
+  /*Conatainer button submint*/
+  #containerModal #form .contBtn {
+    position: relative;
+    width: 90%;
+    height: 20vh;
+    margin: auto;
+  }
+  #containerModal #form .contBtn #send {
+    width: 50%;
+  }
+  #containerModal #form .contBtn #send:hover {
+    background-color: #FFFFFF;
+    color: #f7931e;
+    border: 2px solid #f7931e;
+  }
+  /*--------------- button close form modal ----------------*/
+  #containerModal .btnModalClose {
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  #containerModal .btnModalClose #closeModal {
+    text-decoration: none;
+    font-size: 2em;
+    color: #C0392B;
+  }
+}

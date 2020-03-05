@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  z-index: 100;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFFF;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFF;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.up span {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F7931e;
+  z-index: 10000;
+  font-size: 2.5em;
+}
+.contSection {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+.contSection .contentTitle {
+  width: 100%;
+  height: 25vh;
+}
+.contSection .contentTitle .title {
+  width: 80%;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.contSection .contentTitle hr {
+  background-color: #f7931e;
+  width: 30%;
+  height: 8px;
+  margin: 10px auto;
+  border: none;
+}
+.contSection .contentTitle .paragraph {
+  width: 80%;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+/*container About*/
+
+.containerAbout {
+  background-color: #f7931e;
+  height: 30vh;
+}
+/*title about*/
+
+.containerAbout .contentAbout {
+  width: 70%;
+  height: 90%;
+  box-sizing: border-box;
+}
+.containerAbout .contentAbout .contTitle {
+  width: 100%;
+  height: 40%;
+  box-sizing: border-box;
+}
+.containerAbout .contentAbout .contTitle .title {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  color: #FFFF;
+  font-weight: 500;
+}
+.containerAbout .contentAbout .contTitle hr {
+  background-color: #FFFFFF;
+  width: 15%;
+  height: 8px;
+  margin: auto;
+  border: none;
+}
+/*Paragrap about*/
+
+.containerAbout .contentAbout .contentParagraph {
+  width: 100%;
+  height: 60%;
+}
+.containerAbout .contentAbout .contentParagraph .paragraph {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+/*section maintenance*/
+
+.containerMaintenance,
+.containerWork {
+  background-color: #FFFFFF;
+  width: 90%;
+  margin: auto;
+}
+/*width for maintenance and work*/
+
+.containerMaintenance .contentBox,
+.containerWork .contentGalery {
+  width: 100%;
+  box-sizing: border-box;
+}
+.containerMaintenance .contentBox .maintenance,
+.containerWork .contentGalery .contThumb,
+.containerValues .contentValues .values {
+  width: 30%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F2F3F4;
+}
+/*--------end-------------*/
+
+.containerMaintenance .contentBox .maintenance:hover .contentAfter {
+  opacity: 1;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7931e;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter .contInfo {
+  width: 100%;
+  height: 100%;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter .contInfo .titleInfo {
+  font-size: 1.8em;
+  width: 90%;
+  margin: auto;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-align: center;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter .contInfo .list {
+  font-size: 1em;
+  width: 80%;
+  margin: 10px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: justify;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter .contInfo .btnMore {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1em;
+  width: 50%;
+  background-color: #FFFF;
+  border: 2px solid transparent;
+  color: #f7931e;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s linear;
+  padding: 5px;
+}
+.containerMaintenance .contentBox .maintenance .contentAfter .contInfo .btnMore:hover {
+  background-color: #f7931e;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+/*Container element of the values and maintenance*/
+
+.containerMaintenance .contentBox .maintenance .contMain,
+.containerValues .contentValues .values .contValues {
+  width: 90%;
+  height: 33%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+.containerMaintenance .contentBox .maintenance .contMain .icon,
+.containerValues .contentValues .values .contValues .icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f7931e;
+  border-radius: 100%;
+  font-size: 2em;
+  color: #FFFFFF;
+  margin: auto;
+  transition: all 0.3s linear;
+}
+.containerMaintenance .contentBox .maintenance .contMain .mainTitle,
+.containerValues .contentValues .values .contValues .valuesTitle {
+  font-size: 2em;
+  width: 90%;
+  margin: auto;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.containerMaintenance .contentBox .maintenance .contMain hr {
+  background-color: #f7931e;
+  width: 90%;
+  height: 5px;
+  margin: auto;
+  border: none;
+}
+.containerMaintenance .contentBox .maintenance .contMain .mainParagraph,
+.containerValues .contentValues .values .contValues .valuesParagraph {
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+/*Container work*/
+
+.containerWork .contentGalery .contThumb .thumb,
+.containerWork .contentGalery .contThumb img {
+  width: 100%;
+  height: 100%;
+}
+.containerWork .contentGalery .contThumb .contInfo {
+  position: absolute;
+  z-index: 100;
+  width: 90%;
+  height: 90%;
+  background-color: #f7931e;
+  transition: all 0.5s linear;
+  opacity: 0;
+  margin: auto;
+}
+.containerWork .contentGalery .contThumb:hover .contInfo {
+  opacity: 1;
+}
+.containerWork .contentGalery .contThumb .contInfo .icon {
+  width: 50%;
+  height: 50%;
+}
+.containerWork .contentGalery .contThumb .contInfo .icon a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  font-size: 3em;
+  background-color: transparent;
+  transition: all 0.5s ease-in;
+}
+.containerWork .contentGalery .contThumb .contInfo .icon a:hover {
+  background-color: #FFFFFF;
+  color: #f7931e;
+}
+/*Container Values*/
+
+.containerValues {
+  background-color: #202020;
+  color: #FFFFFF;
+}
+.containerValues .contentValues .values .contValues .icon:hover {
+  transform: rotate(360deg);
+}
+.containerValues .contentTitle .title,
+.containerValues .contentTitle .paragraph {
+  color: #FFFFFF;
+}
+.containerValues .contentValues {
+  width: 90%;
+  margin: auto;
+}
+.containerValues .contentValues .values {
+  background-color: #202020;
+}
+.containerValues .contentValues .values .contValues .valuesTitle,
+.containerValues .contentValues .values .contValues .valuesParagraph {
+  color: #FFFFFF;
+}
+/*Container map*/
+
+.containerMap .contentMap {
+  width: 90%;
+  height: 50vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.containerMap .contentMap iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 580px) and (min-width: 280px) {
+  .maintenance .contentAfter .contInfo .btnMore{
+    display: none;
+  }
+  .contSection,
+  .contSection .contentTitle,
+  .contSection .contentAbout,
+  .contSection .contentAbout .contTitle,
+  .containerMaintenance .contentBox,
+  .containerWork .contentGalery,
+  .containerValues .contentValues {
+    width: 100%;
+  }
+  .contSection .contentTitle {
+    height: 50vh;
+  }
+  .containerAbout {
+    height: 70vh;
+  }
+  .contSection .contentTitle .title,
+  .contSection .contentAbout .contTitle .title,
+  .containerMaintenance .contentBox .maintenance .contMain .mainTitle,
+  .containerMaintenance .contentBox .maintenance .contentAfter .contInfo .titleInfo,
+  .containerValues .contentValues .values .contValues .valuesTitle {
+    width: 90%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .contSection .contentTitle .paragraph,
+  .contSection .contentAbout .contentParagraph .paragraph,
+  .containerMaintenance .contentBox .maintenance .contMain .mainParagraph,
+  .containerValues .contentValues .values .contValues .valuesParagraph {
+    width: 90%;
+    font-size: 0.8em;
+  }
+  .contSection .contentTitle hr,
+  .containerMaintenance .contentBox .maintenance .contMain hr {
+    height: 3px;
+  }
+  .containerMaintenance .contentBox .maintenance,
+  .containerValues .contentValues .values {
+    width: 90%;
+    height: 80vh;
+  }
+  .containerMaintenance .contentBox .maintenance .contentAfter .contentAfter .contInfo .list {
+    font-size: 0.8em;
+  }
+  .containerWork .contentGalery .contThumb {
+    width: 80%;
+    height: 60vh;
+  }
+}

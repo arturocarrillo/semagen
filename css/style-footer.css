@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFFF;
+  font-family: 'Roboto', sans-serif;
+  background-color: #212121;
+}
+#contentFooter {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*Container box's the footer*/
+
+#contentFooter .boxFoo {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90%;
+  width: 30%;
+}
+/*Container of the title*/
+
+#contentFooter .boxFoo .contentTitle {
+  width: 100%;
+  height: 15%;
+}
+#contentFooter .boxFoo .containerInfo{
+	width: 100%;
+	height: 85%;
+}
+#contentFooter .boxFoo .contentTitle .title {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #f7931e;
+  font-weight: 500;
+  text-align: center;
+}
+/*Container of the information */
+
+#contentFooter .boxFoo .containerInfo .contentInformation {
+  width: 100%;
+  height: 30%;
+}
+#contentFooter .boxFoo .containerInfo .contentInformation .subTitle,
+#contentFooter .boxFoo .containerInfo .contentInformation .paragraph {
+  width: 100%;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFF;
+  font-weight: 400;
+  text-align: center;
+}
+/*Container ot the icon's*/
+
+#contentFooter .boxFoo  .containerInfo .contentIcon .icon {
+  width: 20%;
+  padding: 10px;
+  color: #737373;
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(.98, 0, 1, .28);
+}
+#contentFooter .boxFoo  .containerInfo .contentIcon .icon:hover {
+  color: #FFFF;
+}
+#contentFooter .boxFoo  .containerInfo .contentIcon,
+#contentFooter .boxFoo  .containerInfo .contentContact {
+  width: 70%;
+  height: 70%;
+}
+#contentFooter .boxFoo .contentContact .contact {
+  width: 70%;
+  font-size: 0.8em;
+  margin: auto;
+  font-weight: 400;
+  text-align: justify;
+}
+#contentFooter .boxFoo .contentContact .contact .spacing{
+	margin-left: 22px;
+	color: #FFFF;
+}
+#contentFooter .boxFoo .containerInfo .contentContact span {
+  color: #737373;
+  margin-right: 5px;
+}
+@media screen and ( max-width: 585px)  and (min-height: 280px){
+	footer{
+		margin-top: 180px;
+		height: 150vh;
+	}
+	#contentFooter #boxFooOne,
+	#contentFooter #boxFooTwo,
+	#contentFooter #boxFooTree{
+		width: 100%;
+    height: 33%;
+	}
+  #contentFooter .boxFoo .contentTitle{
+    width: 90%;
+    font-size: 1.2em;
+  }
+  #contentFooter .boxFoo .containerInfo{
+    width: 90%;
+  }
+  #contentFooter .boxFoo .contentInformation{
+    width: 100%;
+    font-size: 0.8em;
+  }
+   
+  #contentFooter .boxFoo  .containerInfo .contentContact{
+    width: 100%;
+  }
+  #contentFooter .boxFoo  .containerInfo .contentContact .contact{
+    width: 90%;
+    text-align: center;
+    line-height: 22px;
+  }
+}

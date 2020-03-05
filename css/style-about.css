@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  z-index: 100;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFFF;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFF;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.up span {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F7931e;
+  z-index: 10000;
+  font-size: 2.5em;
+}
+.contSection {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+.contSection .contentTitle {
+  width: 100%;
+  height: 25vh;
+}
+.contSection .contentTitle .title {
+  width: 80%;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.contSection .contentTitle hr {
+  background-color: #f7931e;
+  width: 30%;
+  height: 8px;
+  margin: 10px auto;
+  border: none;
+}
+.contSection .contentTitle .paragraph {
+  width: 80%;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+/*Container about*/
+
+.containerAbout .contentAbout {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background-color: #f7931e;
+}
+.containerAbout .contentAbout .paragraph {
+  font-size: 1.5em;
+  width: 60%;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+.containerAbout .contentAbout .remarke {
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  color: #f7931e;
+  font-size: 6em;
+  bottom: -50px;
+  text-shadow: 0px 0px 10px rgba(33, 33, 33, 1);
+}
+.containerAbout .contentThumb {
+  width: 70%;
+  height: 60vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.containerAbout .contentThumb .thumb,
+.containerAbout .contentThumb .thumb img {
+  width: 100%;
+  height: 100%;
+}
+/*Container Form*/
+
+@media screen and (max-width: 580px) and (min-width: 280px) {
+  .contSection,
+  .contSection .contentTitle,
+  .containerAbout .contentAbout,
+  .containerAbout .contentThumb {
+    width: 100%;
+  }
+  .contSection .contentTitle {
+    height: 60vh;
+  }
+  .contSection .contentTitle .title {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  .contSection .contentTitle .paragraph,
+  .containerAbout .contentAbout .paragraph {
+    width: 90%;
+    font-size: 0.8em;
+  }
+  .containerAbout .contentAbout {
+    height: 90vh;
+  }
+  .containerAbout .contentAbout .remarke {
+    font-size: 5em;
+  }
+  .containerAbout .contentThumb .thumb {
+    width: 80%;
+    height: 60%;
+  }
+}

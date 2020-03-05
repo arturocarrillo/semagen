@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+header{
+	width: 100%;
+	height: 15vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+}
+#containerMov{
+	display: none;
+}
+#containerDesk{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+/*container of the header desktop*/
+/*Apply flex-box for container logo*/
+#containerDesk .contentLogo{
+width: 25%;
+height: 100%;
+overflow: hidden;
+box-sizing: border-box;
+}
+#containerDesk .contentLogo .contLogo{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+#containerDesk .contentLogo .contLogo img{
+	width: 70%;
+	margin: auto;
+}
+/*Apply flex-box for container nav*/
+#containerDesk #contentNavDesk{
+	width: 75%;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#contentNavDesk #navDesk{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#contentNavDesk #navDesk a{
+	text-decoration: none;
+	font-size: 1.1em;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.3s ease;
+	padding: 5px;
+	border-radius: 2px;
+}
+/*link home*/
+#contentNavDesk #navDesk .home{
+	color: #f7931e;
+}
+#contentNavDesk #navDesk .home:hover{
+	color: #f3b163;
+}
+/*hover link's*/
+#contentNavDesk #navDesk .aHover:hover{
+	background-color: #f7931e;
+	color: #FFFFFF;
+}
+
+
+
+/*jqery for header in screen movil*/
+@media screen and ( max-width: 585px ) and ( min-width: 280px ){
+	#containerDesk{
+		display:none;
+	}
+
+	#containerMov {
+		display:flex;
+	}
+	#containerMov #contentIcon{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	#containerMov #contentIcon .contentMiniLogo{
+		width:30%;
+		height:12vh;
+	}
+	#containerMov #contentIcon .contentMiniLogo .contLogo{
+		margin: auto;
+		width: 100%;
+		height: 100%;
+	}
+	#containerMov #contentIcon .contentMiniLogo .contLogo img{
+		width: 70%;
+		margin: auto;
+	}
+	#containerMov #contentIcon .contIcon{
+		width: 30%;
+		height:12vh;
+		position: relative;
+	}
+	#containerMov #contentIcon .contIcon .icon {
+		font-size: 2.2em;
+		color:  #f7931e;
+		width: 50%;
+		height: 100%;
+		position:absolute;
+		right: 0;
+		transition: all 0.3s linear;
+	}
+	#containerMov #contentIcon .contIcon .icon:hover{
+		color: #f3b163;
+	}
+	#containerMov .contNav #navMov {
+    width: 90%;
+    height: 90vh;
+    left: -100%;
+    margin: 0;
+    margin-top: 35px;
+    position: fixed;
+    background-color: #FFFFFF;
+  }
+   #containerMov .contNav #navMov .contLink{
+   	width: 100%;
+   	height: 60%;
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   }
+  #containerMov .contNav #navMov a{
+  	text-decoration: none;
+    width: 100%;
+    text-align: left;
+    color: #f7931e;
+    padding: 5px;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px 5px;
+  }
+  #containerMov .contNav #navMov a:hover{
+  	background-color: #f7931e;
+  	color: #FFFFFF;
+  }
+}

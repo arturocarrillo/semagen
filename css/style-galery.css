@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  z-index: 100;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #FFFF;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFF;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.up span {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F7931e;
+  z-index: 10000;
+  font-size: 2.5em;
+}
+.contSection {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+.contSection .contentTitle {
+  width: 100%;
+  height: 25vh;
+}
+.contSection .contentTitle .title {
+  width: 80%;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+.contSection .contentTitle hr {
+  background-color: #f7931e;
+  width: 30%;
+  height: 8px;
+  margin: 10px auto;
+  border: none;
+}
+.contSection .contentTitle .paragraph {
+  width: 80%;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+/*Container galery*/
+
+.containerGalery .contentGalery {
+  width: 90%;
+  box-sizing: border-box;
+}
+.containerGalery .contentGalery .contThumb {
+  width: 30%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F2F3F4;
+}
+.containerGalery .contentGalery .contThumb .thumb,
+.containerGalery .contentGalery .contThumb img {
+  width: 100%;
+  height: 100%;
+}
+.containerGalery .contentGalery .contThumb .contInfo {
+  position: absolute;
+  z-index: 100;
+  width: 90%;
+  height: 90%;
+  background-color: #f7931e;
+  transition: all 0.5s linear;
+  opacity: 0;
+  margin: auto;
+}
+.containerGalery .contentGalery .contThumb:hover .contInfo {
+  opacity: 1;
+}
+.containerGalery .contentGalery .contThumb .contInfo .icon {
+  width: 50%;
+  height: 50%;
+}
+.containerGalery .contentGalery .contThumb .contInfo .icon a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  font-size: 3em;
+  background-color: transparent;
+  transition: all 0.5s ease-in;
+}
+.containerGalery .contentGalery .contThumb .contInfo .icon a:hover {
+  background-color: #FFFFFF;
+  color: #f7931e;
+}
+@media screen and ( max-width: 580px) and ( min-width: 280px) {
+  .contSection,
+  .contSection .contentTitle,
+  .containerGalery,
+  .containerGalery .contentGalery,
+  .containerBrands .contentBrands,
+  .containerBrands .contentBrands .contBrands {
+    width: 100%;
+  }
+  .contSection .contentTitle {
+    height: 60vh;
+  }
+  .contSection .contentTitle .title {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  .contSection .contentTitle .paragraph {
+    width: 90%;
+    margin: auto;
+    font-size: 0.8em;
+  }
+  .containerGalery .contentGalery .contThumb{
+    width: 80%;
+    height: 50vh;
+  }
+  .containerBrands .contentBrands .contBrands img {
+    width: 100%;
+  }
+}
